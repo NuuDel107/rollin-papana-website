@@ -1,0 +1,53 @@
+/* the fonts */
+
+@font-face {
+    font-family: simply-rounded;
+    src: url("/fonts/Simply Rounded.ttf");
+}
+@font-face {
+    font-family: simply-rounded;
+    src: url("/fonts/Simply Rounded Bold.ttf");
+    font-weight: bold;
+}
+
+html, body {
+    background-color: aliceblue;
+    margin: 0;
+}
+.papanaotsikko {
+    text-align: center;
+    font-family: simply-rounded;
+    font-weight: normal;
+    font-size: 20vh;
+
+    -webkit-font-smoothing: antialiased;
+    background-image: linear-gradient(to right, blue, aliceblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px black;
+
+    margin: 0px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+.papanakuvaus {
+    font-size: 30px;
+    margin: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+.karttaupotus {
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.kartta-alaotsikko {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}

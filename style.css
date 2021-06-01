@@ -10,10 +10,26 @@
     font-weight: bold;
 }
 
+
 html, body {
     background-color: aliceblue;
     margin: 0;
+    background-image: url("/img/frontpage_header.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+/*
+    for Adobe Color:
+    harmony: analogic
+    middle color in hex: #C7F3E7
+*/
+    
+/* the front page header */
+
 .papanaotsikko {
     text-align: center;
     font-family: simply-rounded;
@@ -21,7 +37,7 @@ html, body {
     font-size: 20vh;
 
     -webkit-font-smoothing: antialiased;
-    background-image: linear-gradient(to right, blue, aliceblue);
+    background-image: linear-gradient(to right, rgb(114, 179, 146), rgb(163, 255, 209));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px black;
@@ -32,22 +48,43 @@ html, body {
 }
 
 .papanakuvaus {
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
+    background-color: rgba(192, 233, 249, 0.7);
+    padding: 20px;
+    border-radius: 40px;
 }
 
+/* the front page map */
 .karttaupotus {
     margin: 20px;
-    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(169, 219, 219, 0.7);
+    border-radius: 25px;
+    margin-bottom: 20px;
 }
 
 .kartta-alaotsikko {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: lighter;
     text-align: center;
-    width: 100%;
-    margin: 10px;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+/* layout changes for mobile devices */
+
+@media only screen and (max-width: 900px) {
+    .papanaotsikko {
+        font-size: 12vh;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .papanakuvaus {
+        text-align: center;
+    }
 }
